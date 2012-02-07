@@ -1,0 +1,16 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           i18n_domain="koodaamo.bannerviewlet">
+
+    <include package="plone.browserlayer" />
+
+    <browser:viewlet
+      name="koodaamo.bannerviewlet"
+      for="*"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+      template="banner.pt"
+      layer="koodaamo.bannerviewlet.interfaces.IBannerViewletLayer"
+      permission="zope2.View"
+      />
+
+</configure>

@@ -1,0 +1,3 @@
+<div id="headerbannerimage">
+   <img tal:replace="structure here/banner.jpg">
+</div>
